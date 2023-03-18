@@ -12,12 +12,13 @@ html {
 }
 
 body {
-  width: 37.5rem;
+  width: 100%;
+  //   37.5rem;
   display: grid;
   place-items: center;
   margin-inline: auto;
   //   height: 100vh;
-//   background-color: rgb(213, 207, 207);
+  //   background-color: rgb(213, 207, 207);
   max-height: 333.5rem;
 }
 

@@ -8,96 +8,124 @@ footer {
   align-items: flex-start;
   color: #ffffff;
   padding-inline: 1.7rem;
-}
-li {
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2.7rem;
-  text-align: center;
-  list-style-type: none;
-  color: #ffffff;
-  padding-top: 1.6rem;
-}
-
-.footer-img {
-  margin-top: 9rem;
-}
-
-.contact-box {
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
   position: relative;
-  width: 30rem;
-  height: auto;
-  margin-left: 3.5rem;
-}
 
-.adress::before {
-  content: "";
-  width: 2.4rem;
-  height: 2.4rem;
-  position: absolute;
-  left: -3.5rem;
-  top: 3rem;
-  background-image: url("../images/icon-location.svg");
-  color: white;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-}
+  @media only screen and (min-width: 990px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 12rem;
+  }
 
-.phone::before {
-  content: "";
-  width: 2.4rem;
-  height: 2.4rem;
-  position: absolute;
-  left: -3.5rem;
-  top: 12rem;
-  background-image: url("../images/icon-phone.svg");
-  color: white;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-}
-
-.e-mail::before {
-  content: "";
-  width: 2.4rem;
-  height: 2.4rem;
-  position: absolute;
-  top: 15rem;
-  left: -3.5rem;
-  background-image: url("../images/icon-email.svg");
-  color: white;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  padding-bottom: 4rem;
-}
-
-.p_footer {
-  padding-top: 2.4rem;
-}
-
-ul {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.social-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  .p_footer_socials {
-    font-family: "Poppins";
-    font-style: normal;
+  li {
     font-weight: 400;
-    font-size: 1.11304rem;
-    line-height: 1.7rem;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    text-align: center;
+    list-style-type: none;
     color: #ffffff;
+    padding-top: 1.6rem;
+  }
+
+  .footer-img {
+    margin-top: 9rem;
+    @media only screen and (min-width: 990px) {
+      position: absolute;
+      top: 11rem;
+      left: 10rem;
+    }
+  }
+
+  .contact-box {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    position: relative;
+    width: 30rem;
+    height: auto;
+    margin-left: 3.5rem;
+  }
+
+  .adress::before {
+    content: "";
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: -3.5rem;
+    top: 3rem;
+    background-image: url("../images/icon-location.svg");
+    color: white;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+  }
+
+  .phone::before {
+    content: "";
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: -3.5rem;
+    top: 12rem;
+    background-image: url("../images/icon-phone.svg");
+    color: white;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+  }
+
+  .e-mail::before {
+    content: "";
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 15rem;
+    left: -3.5rem;
+    background-image: url("../images/icon-email.svg");
+    color: white;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding-bottom: 4rem;
+  }
+
+  .p_footer {
+    padding-top: 2.4rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 990px) {
+      height: 13rem;
+      width: 24rem;
+      padding-left: 4rem;
+    }
+  }
+
+  .social-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    @media only screen and (min-width: 990px) {
+      width: 30%;
+      justify-content: space-around;
+      height: 20rem;
+    }
+
+    .p_footer_socials {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11304rem;
+      line-height: 1.7rem;
+      color: #ffffff;
+    }
   }
 }

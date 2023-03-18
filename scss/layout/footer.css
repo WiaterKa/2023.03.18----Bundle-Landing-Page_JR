@@ -7,9 +7,19 @@ footer {
   align-items: flex-start;
   color: #ffffff;
   padding-inline: 1.7rem;
+  position: relative;
 }
 
-li {
+@media only screen and (min-width: 990px) {
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 12rem;
+  }
+}
+
+footer li {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.7rem;
@@ -19,11 +29,19 @@ li {
   padding-top: 1.6rem;
 }
 
-.footer-img {
+footer .footer-img {
   margin-top: 9rem;
 }
 
-.contact-box {
+@media only screen and (min-width: 990px) {
+  footer .footer-img {
+    position: absolute;
+    top: 11rem;
+    left: 10rem;
+  }
+}
+
+footer .contact-box {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.4rem;
@@ -33,7 +51,7 @@ li {
   margin-left: 3.5rem;
 }
 
-.adress::before {
+footer .adress::before {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
@@ -47,7 +65,7 @@ li {
   background-size: contain;
 }
 
-.phone::before {
+footer .phone::before {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
@@ -61,7 +79,7 @@ li {
   background-size: contain;
 }
 
-.e-mail::before {
+footer .e-mail::before {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
@@ -76,17 +94,26 @@ li {
   padding-bottom: 4rem;
 }
 
-.p_footer {
+footer .p_footer {
   padding-top: 2.4rem;
 }
 
-ul {
+footer ul {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.social-box {
+@media only screen and (min-width: 990px) {
+  footer ul {
+    height: 13rem;
+    width: 24rem;
+    padding-left: 4rem;
+  }
+}
+
+footer .social-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +121,15 @@ ul {
   width: 100%;
 }
 
-.social-box .p_footer_socials {
+@media only screen and (min-width: 990px) {
+  footer .social-box {
+    width: 30%;
+    justify-content: space-around;
+    height: 20rem;
+  }
+}
+
+footer .social-box .p_footer_socials {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;

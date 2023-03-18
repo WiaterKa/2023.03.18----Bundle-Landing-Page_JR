@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  width: 37.5rem;
+  width: 100%;
   max-height: 333.5rem;
   place-items: center;
   margin-inline: auto;
@@ -36,6 +36,12 @@ header {
   display: flex;
 }
 
+@media only screen and (min-width: 990px) {
+  header {
+    padding-inline: 8rem;
+  }
+}
+
 header .btn-secondary {
   color: #00252e;
   cursor: pointer;
@@ -54,13 +60,49 @@ header .header-img {
   height: 1.6rem;
 }
 
-.hero-main {
-  height: 55.3rem;
-  width: 30.4rem;
+@media only screen and (min-width: 990px) {
+  header .header-img {
+    max-width: 68rem;
+    max-height: 48.2rem;
+  }
+
+  .hero-img-box {
+    width: 100%;
+  }
+}
+
+.hero-txt-box {
+  height: 32rem;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   display: flex;
+}
+
+@media only screen and (min-width: 990px) {
+  .hero-txt-box {
+    width: 95%;
+    padding-right: 6rem;
+  }
+}
+
+.hero-main {
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3.5rem;
+  display: flex;
+}
+
+@media only screen and (min-width: 990px) {
+  .hero-main {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline: 9rem;
+  }
 }
 
 .hero-main .h1-hero {
@@ -86,6 +128,14 @@ header .header-img {
   height: 20.9rem;
 }
 
+@media only screen and (min-width: 990px) {
+  .hero-main .hero-img {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+  }
+}
+
 .btn-primary {
   color: #fff;
   text-align: center;
@@ -106,24 +156,55 @@ header .header-img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 6rem;
   padding-bottom: 12rem;
   display: flex;
   position: relative;
 }
 
 .article-box {
-  height: 44.8rem;
-  width: 33.5rem;
+  height: auto;
+  width: auto;
+  margin-bottom: 4rem;
   text-align: center;
   background: #fff;
   border-radius: 1.6rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-inline: 2rem;
   padding: 2rem;
   display: flex;
   box-shadow: 0 0 14px #00000012;
+}
+
+@media only screen and (min-width: 990px) {
+  .article-box {
+    max-width: 100rem;
+    flex-direction: row-reverse;
+    margin-inline: 10.4rem;
+  }
+}
+
+@media only screen and (max-width: 990px) and (min-width: 700px) {
+  .article-box {
+    max-width: 75rem;
+    flex-direction: row-reverse;
+    margin-inline: 10.4rem;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .article-box .article-box-txt {
+    text-align: left;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 12rem;
+    padding-right: 3rem;
+    display: flex;
+  }
 }
 
 .article-box .h2-articles {
@@ -137,13 +218,41 @@ header .header-img {
   line-height: 3rem;
 }
 
+@media only screen and (min-width: 990px) {
+  .article-box .h2-articles {
+    padding-inline: 0;
+  }
+}
+
+.article-box .article-box-img {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (min-width: 990px) {
+  .article-box .article-box-img {
+    height: 100%;
+    width: 40%;
+  }
+}
+
 .article-box .article-img {
   width: 25.6rem;
   height: 25.6rem;
   padding: 2.6rem 4rem;
 }
 
-.article-box .p_articles {
+@media only screen and (min-width: 990px) {
+  .article-box .article-img {
+    height: 100%;
+    width: 100%;
+    padding-left: 6rem;
+  }
+}
+
+.article-box .article-img .p_articles {
   text-align: center;
   color: #808e9a;
   padding-inline: 4rem;
@@ -154,9 +263,16 @@ header .header-img {
   line-height: 2.1rem;
 }
 
+@media only screen and (min-width: 990px) {
+  .article-box.other {
+    flex-direction: row;
+  }
+}
+
 .article-box--secondary {
   width: 35rem;
   height: 17.5rem;
+  z-index: 10;
   background: #fff;
   border-radius: 15px;
   flex-direction: column;
@@ -169,6 +285,12 @@ header .header-img {
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 14px #00000012;
+}
+
+@media only screen and (min-width: 990px) {
+  .article-box--secondary {
+    width: 60%;
+  }
 }
 
 .article-box--secondary h2 {
@@ -184,9 +306,19 @@ footer {
   align-items: flex-start;
   padding-inline: 1.7rem;
   display: flex;
+  position: relative;
 }
 
-li {
+@media only screen and (min-width: 990px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 12rem;
+  }
+}
+
+footer li {
   text-align: center;
   color: #fff;
   padding-top: 1.6rem;
@@ -196,11 +328,19 @@ li {
   list-style-type: none;
 }
 
-.footer-img {
+footer .footer-img {
   margin-top: 9rem;
 }
 
-.contact-box {
+@media only screen and (min-width: 990px) {
+  footer .footer-img {
+    position: absolute;
+    top: 11rem;
+    left: 10rem;
+  }
+}
+
+footer .contact-box {
   width: 30rem;
   height: auto;
   margin-left: 3.5rem;
@@ -210,7 +350,7 @@ li {
   position: relative;
 }
 
-.adress:before {
+footer .adress:before {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
@@ -224,7 +364,7 @@ li {
   left: -3.5rem;
 }
 
-.phone:before {
+footer .phone:before {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
@@ -238,7 +378,7 @@ li {
   left: -3.5rem;
 }
 
-.e-mail:before {
+footer .e-mail:before {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
@@ -253,17 +393,25 @@ li {
   left: -3.5rem;
 }
 
-.p_footer {
+footer .p_footer {
   padding-top: 2.4rem;
 }
 
-ul {
-  flex-direction: column;
+footer ul {
+  flex-flow: column wrap;
   align-items: flex-start;
   display: flex;
 }
 
-.social-box {
+@media only screen and (min-width: 990px) {
+  footer ul {
+    height: 13rem;
+    width: 24rem;
+    padding-left: 4rem;
+  }
+}
+
+footer .social-box {
   width: 100%;
   flex-direction: column;
   justify-content: center;
@@ -271,7 +419,15 @@ ul {
   display: flex;
 }
 
-.social-box .p_footer_socials {
+@media only screen and (min-width: 990px) {
+  footer .social-box {
+    width: 30%;
+    height: 20rem;
+    justify-content: space-around;
+  }
+}
+
+footer .social-box .p_footer_socials {
   color: #fff;
   font-family: Poppins;
   font-size: 1.11304rem;
