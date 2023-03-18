@@ -19,6 +19,10 @@ li {
   padding-top: 1.6rem;
 }
 
+.footer-img {
+  margin-top: 9rem;
+}
+
 .contact-box {
   font-weight: 400;
   font-size: 1.4rem;
@@ -26,12 +30,7 @@ li {
   position: relative;
   width: 30rem;
   height: auto;
-  margin-top: 19rem;
-  margin-left: 4rem;
-}
-
-.contact-box .header-img {
-  color: white;
+  margin-left: 3.5rem;
 }
 
 .adress::before {
@@ -67,7 +66,7 @@ li {
   width: 2.4rem;
   height: 2.4rem;
   position: absolute;
-  top: 17rem;
+  top: 15rem;
   left: -3.5rem;
   background-image: url("../images/icon-email.svg");
   color: white;
@@ -85,4 +84,21 @@ ul {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.social-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social-box .p_footer_socials {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.11304rem;
+  line-height: 1.7rem;
+  color: #ffffff;
 }

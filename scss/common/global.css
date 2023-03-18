@@ -15,6 +15,5 @@ body {
   display: grid;
   place-items: center;
   margin-inline: auto;
-  background-color: #d5cfcf;
   max-height: 333.5rem;
 }

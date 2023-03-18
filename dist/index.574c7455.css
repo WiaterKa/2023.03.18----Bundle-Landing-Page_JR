@@ -13,7 +13,6 @@ html {
 body {
   width: 37.5rem;
   max-height: 333.5rem;
-  background-color: #d5cfcf;
   place-items: center;
   margin-inline: auto;
   display: grid;
@@ -21,11 +20,12 @@ body {
 
 .hero {
   width: 100%;
-  height: 72rem;
-  background-image: url("bg-hero-mobile.ba7047a1.svg");
+  height: auto;
+  background: #edfbff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
   display: flex;
 }
 
@@ -38,6 +38,7 @@ header {
 
 header .btn-secondary {
   color: #00252e;
+  cursor: pointer;
   background: #fff;
   border: none;
   border-radius: 1.2rem;
@@ -88,6 +89,7 @@ header .header-img {
 .btn-primary {
   color: #fff;
   text-align: center;
+  cursor: pointer;
   background: #ff52c1;
   border: none;
   border-radius: 2rem;
@@ -100,10 +102,11 @@ header .header-img {
 
 .articles {
   width: 100%;
-  height: 183.2rem;
+  height: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 12rem;
   display: flex;
   position: relative;
 }
@@ -193,19 +196,18 @@ li {
   list-style-type: none;
 }
 
+.footer-img {
+  margin-top: 9rem;
+}
+
 .contact-box {
   width: 30rem;
   height: auto;
-  margin-top: 19rem;
-  margin-left: 4rem;
+  margin-left: 3.5rem;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.4rem;
   position: relative;
-}
-
-.contact-box .header-img {
-  color: #fff;
 }
 
 .adress:before {
@@ -247,7 +249,7 @@ li {
   background-size: contain;
   padding-bottom: 4rem;
   position: absolute;
-  top: 17rem;
+  top: 15rem;
   left: -3.5rem;
 }
 
@@ -259,6 +261,23 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   display: flex;
+}
+
+.social-box {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.social-box .p_footer_socials {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.11304rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7rem;
 }
 
 /*# sourceMappingURL=index.574c7455.css.map */
