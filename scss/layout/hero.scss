@@ -25,7 +25,7 @@ header {
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0954201);
     border-radius: 1.2rem;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.4rem;
     border: none;
     color: #00252e;
@@ -38,10 +38,14 @@ header {
       border-radius: 24px;
       padding: 1.3rem 6.3rem;
     }
+
+    // @media only screen and (min-width: 990px) {
+    //   font-size: 1rem;
+    // }
   }
   .header-img {
-    width: 10.4rem;
-    height: 1.6rem;
+    width: 20rem;
+    height: 3.1rem;
 
     @media only screen and (min-width: 990px) {
       max-width: 68rem;
@@ -68,7 +72,8 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 32rem;
+  height: 100%;
+  gap: 2.5rem;
 
   @media only screen and (min-width: 990px) {
     width: 95%;
@@ -110,7 +115,7 @@ header {
 
 .p-hero {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2.4rem;
   text-align: center;
   color: #00252e;
@@ -143,4 +148,8 @@ header {
   line-height: 1.6rem;
   text-align: center;
   cursor: pointer;
+
+  @media only screen and (max-width: 990px) {
+    margin-bottom: 3rem;
+  }
 }
